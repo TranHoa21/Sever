@@ -11,20 +11,12 @@ module.exports = {
                 primaryKey: true,
                 type: Sequelize.INTEGER
             },
-            places_name: {
-                type: Sequelize.INTEGER,
-                allowNull: false,
-                references: {
-                    model: 'Places',
-                    key: 'name',
-                },
-
-            },
             title: {
                 type: Sequelize.STRING,
                 allowNull: false,
 
             },
+
             description: {
                 type: Sequelize.TEXT,
 
@@ -36,10 +28,6 @@ module.exports = {
                 type: DataTypes.STRING,
 
             },
-            price: {
-                type: DataTypes.STRING,
-
-            },
 
             createdAt: {
                 allowNull: false,
@@ -48,7 +36,21 @@ module.exports = {
             updatedAt: {
                 allowNull: false,
                 type: 'TIMESTAMP', defaultValue: Sequelize.literal('CURRENT_TIMESTAMP')
-            }
+            },
+            places_name: {
+                type: Sequelize.STRING,
+                allowNull: false,
+                references: {
+                    model: 'Places',
+                    key: 'name',
+                },
+
+            },
+            price: {
+                type: DataTypes.STRING,
+
+            },
+
         });
     },
     async down(queryInterface, Sequelize) {

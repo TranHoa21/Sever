@@ -34,18 +34,11 @@ module.exports = {
             user_name: {
                 type: Sequelize.STRING,
                 allowNull: false,
-                references: {
-                    model: 'Users',
-                    key: 'name',
-                },
+
             },
             user_avatar: {
                 type: Sequelize.STRING,
                 allowNull: false,
-                references: {
-                    model: 'Users',
-                    key: 'avatar',
-                },
             },
             createdAt: {
                 allowNull: false,
