@@ -1,45 +1,43 @@
-require('dotenv').config();
-
-module.exports = {
-  development: {
-    username: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_DATABASE,
-    host: process.env.DB_HOST,
-    dialect: process.env.DB_DIALECT,
-    dialectOptions: {
-      ssl: {
-        require: process.env.DB_SSL_REQUIRE === 'true',
-        rejectUnauthorized: process.env.DB_SSL_REJECT_UNAUTHORIZED === 'true'
+{
+  "development": {
+    "username": "default",
+    "password": "LYv2Dsu0HUzP",
+    "database": "verceldb",
+    "host": "ep-red-salad-a4rv5l7b-pooler.us-east-1.aws.neon.tech",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
       }
     },
-    logging: false,
-    timezone: "+07:00"
+    "logging": false,
+    "timezone": "+07:00"
   },
-  test: {
-    username: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_DATABASE,
-    host: process.env.DB_HOST,
-    dialect: process.env.DB_DIALECT,
-    dialectOptions: {
-      ssl: {
-        require: process.env.DB_SSL_REQUIRE === 'true',
-        rejectUnauthorized: process.env.DB_SSL_REJECT_UNAUTHORIZED === 'true'
+  "test": {
+    "username": "default",
+    "password": "LYv2Dsu0HUzP",
+    "database": "verceldb",
+    "host": "ep-red-salad-a4rv5l7b-pooler.us-east-1.aws.neon.tech",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
       }
     }
   },
-  production: {
-    username: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_DATABASE,
-    host: process.env.DB_HOST,
-    dialect: process.env.DB_DIALECT,
-    dialectOptions: {
-      ssl: {
-        require: process.env.DB_SSL_REQUIRE === 'true',
-        rejectUnauthorized: process.env.DB_SSL_REJECT_UNAUTHORIZED === 'true'
+  "production": {
+    "username": "default",
+    "password": "LYv2Dsu0HUzP",
+    "database": "verceldb",
+    "host": "ep-red-salad-a4rv5l7b-pooler.us-east-1.aws.neon.tech",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
       }
     }
   }
-};
+}
