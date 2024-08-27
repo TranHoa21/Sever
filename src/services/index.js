@@ -10,4 +10,5 @@ export * from './payment.js';
 export * from './message.js';
 export * from './notification.js';
 export * from './notificationclient.js';
+export * from './tourdata.js';
 

@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "giaiky",
-    "password": "WcKdKVmZaebiuHcRe7PJgtETR6GyTR2d",
-    "database": "serenityadventures",
-    "host": "dpg-cp5o7o2cn0vc73biidl0-a.oregon-postgres.render.com",
+    "username": "tranhoa",
+    "password": "MZ43DozWuEb2ZLEJTycrS0N18bN16SG0",
+    "database": "serenityadventures_5fqh",
+    "host": "dpg-cqr71jl6l47c739pdl60-a.oregon-postgres.render.com",
     "dialect": "postgres",
     "dialectOptions": {
       "ssl": {
@@ -15,10 +15,10 @@
     "timezone": "+07:00"
   },
   "test": {
-    "username": "giaiky",
-    "password": "WcKdKVmZaebiuHcRe7PJgtETR6GyTR2d",
-    "database": "serenityadventures",
-    "host": "dpg-cp5o7o2cn0vc73biidl0-a.oregon-postgres.render.com",
+    "username": "tranhoa",
+    "password": "MZ43DozWuEb2ZLEJTycrS0N18bN16SG0",
+    "database": "serenityadventures_5fqh",
+    "host": "dpg-cqr71jl6l47c739pdl60-a.oregon-postgres.render.com",
     "dialect": "postgres",
     "dialectOptions": {
       "ssl": {
@@ -28,10 +28,10 @@
     }
   },
   "production": {
-    "username": "giaiky",
-    "password": "WcKdKVmZaebiuHcRe7PJgtETR6GyTR2d",
-    "database": "serenityadventures",
-    "host": "dpg-cp5o7o2cn0vc73biidl0-a.oregon-postgres.render.com",
+    "username": "tranhoa",
+    "password": "MZ43DozWuEb2ZLEJTycrS0N18bN16SG0",
+    "database": "serenityadventures_5fqh",
+    "host": "dpg-cqr71jl6l47c739pdl60-a.oregon-postgres.render.com",
     "dialect": "postgres",
     "dialectOptions": {
       "ssl": {

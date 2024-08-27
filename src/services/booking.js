@@ -1,6 +1,6 @@
 import db from '../models/index.js';
 import { io } from 'socket.io-client';
-const socket = io('https://serenity-adventures-demo.onrender.com/');
+const socket = io('http://localhost:3001/');
 
 export const createNewBooking = async (userId, name, email, tour_name, start_day, total_amount, people, payment_status, phone_number) => {
     try {

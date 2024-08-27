@@ -4,26 +4,22 @@ export const createNewPlace = async (name, address) => {
     try {
         const newPlace = await db.Place.findOne({ where: { name } });
         if (newPlace) {
-            resolve({
+            return {
                 err: 1,
-                mes: 'Email has been registered, please use another email',
-            });
-            return;
+                mes: 'Place name has been registered, please use another name',
+            };
         }
-        const getNewPlace = await db.Place.create(
-            {
-                name,
-                address,
-            }
-
-        )
+        const getNewPlace = await db.Place.create({
+            name,
+            address,
+        });
         return {
             err: 0,
-            mes: 'User created successfully.',
-            user: getNewPlace,
-        }
+            mes: 'Place created successfully.',
+            place: getNewPlace,
+        };
     } catch (error) {
-        console.log('check err >>>', error)
+        console.log('check err >>>', error);
         throw error;
     }
 }

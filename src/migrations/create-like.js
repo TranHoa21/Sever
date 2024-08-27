@@ -15,18 +15,15 @@ module.exports = {
             post_id: {
                 type: Sequelize.INTEGER,
                 allowNull: false,
-                references: {
-                    model: 'Posts',
-                    key: 'id',
-                },
+                //  references: {
+                //       model: 'Posts',
+                //      key: 'id',
+                //  },
             },
             user_id: {
                 type: Sequelize.INTEGER,
                 allowNull: false,
-                references: {
-                    model: 'Users',
-                    key: 'id',
-                },
+
             },
             liked: {
                 type: Sequelize.BOOLEAN,

@@ -5,15 +5,14 @@ import Joi from 'joi';
 
 export const createTour = async (req, res) => {
     const fileData = req.file;
-    const { title, description } = req.body;
+    const { title, price, address, day, places_name, introduce } = req.body;
 
     try {
         const schema = Joi.object({
             title: Joi.string().required(),
-            description: Joi.string().required(),
         });
         console.log("check fileData", fileData)
-        const { error } = schema.validate({ title, description });
+        const { error } = schema.validate({ title, price, address, day, places_name, introduce });
         if (error) {
             if (fileData) {
                 cloudinary.uploader.destroy(fileData.filename);

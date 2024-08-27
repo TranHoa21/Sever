@@ -10,7 +10,7 @@ import payment from './payment.js';
 import messages from './message.js';
 import notification from "./notification.js"
 import notificationclient from "./notificationclient.js"
-
+import tourdata from "./tourdata.js"
 
 const initRouter = (app) => {
     app.use('/api/v1/user', user);
@@ -19,6 +19,7 @@ const initRouter = (app) => {
     app.use('/api/v1/search', search);
     app.use('/api/v1/post', post);
     app.use('/api/v1/tour', tour);
+    app.use('/api/v1/tourdata', tourdata);
     app.use('/api/v1/booking', booking);
     app.use('/api/v1/place', place);
     app.use('/api/v1/payment', payment);

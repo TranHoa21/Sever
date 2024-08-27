@@ -18,12 +18,13 @@ export const createTour = (body, fileData) => new Promise(async (resolve, reject
             where: { title: body?.title },
             defaults: {
                 title: body.title,
-                description: body.description,
                 image: fileData?.path,
                 places_name: body.places_name,
                 link: link,
                 price: body.price,
-
+                address: body.address,
+                day: body.day,
+                introduce: body.introduce
             },
 
         })
@@ -52,6 +53,9 @@ export const getAllTour = async () => {
             places_name: tour.places_name,
             link: tour.link,
             price: tour.price,
+            address: tour.address,
+            day: tour.day,
+            introduce: tour.introduce
 
 
         }));

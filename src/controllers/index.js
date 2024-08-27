@@ -4,6 +4,7 @@ export * from './pagination.js';
 export * from './post.js';
 export * from './search.js';
 export * from './tour.js';
+export * from './tourdata.js';
 export * from './booking.js';
 export * from './place.js';
 export * from './payment.js';
