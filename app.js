@@ -102,10 +102,10 @@ io.on("connection", (socket) => {
 const { Pool } = require('pg');
 
 const pool = new Pool({
-    user: process.env.USER_POSTGRE,
-    host: process.env.HOST,
-    database: process.env.DATABASE,
-    password: process.env.PASSWORD,
+    user: "default",
+    host: "ep-red-salad-a4rv5l7b-pooler.us-east-1.aws.neon.tech",
+    database: "verceldb",
+    password: "LYv2Dsu0HUzP",
     port: 5432,
     ssl: {
         rejectUnauthorized: false,
