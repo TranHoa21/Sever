@@ -1,6 +1,6 @@
 import db from '../models/index.js';
 import { io } from 'socket.io-client';
-const socket = io('http://localhost:3001/');
+const socket = io('https://sever-production-702f.up.railway.app/');
 
 export const createNewBooking = async (userId, name, email, tour_name, start_day, total_amount, people, payment_status, phone_number) => {
     try {

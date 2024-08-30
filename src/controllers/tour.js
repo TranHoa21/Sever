@@ -10,6 +10,11 @@ export const createTour = async (req, res) => {
     try {
         const schema = Joi.object({
             title: Joi.string().required(),
+            price: Joi.string().required(),
+            address: Joi.string().required(),
+            day: Joi.string().required(),
+            places_name: Joi.string().required(),
+            introduce: Joi.string().required(),
         });
         console.log("check fileData", fileData)
         const { error } = schema.validate({ title, price, address, day, places_name, introduce });
