@@ -8,13 +8,13 @@ import { Server } from "socket.io";
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 8000;
 
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
 
-    origin: ['https://serenity-adventures-demo.vercel.app', 'https://admin-serenity-adventures.vercel.app', 'http://localhost:3000', 'http://localhost:3002'],
+    origin: ['https://serenity-adventures-demo.vercel.app', 'https://admin-serenity-adventures.vercel.app','https://sever-production-702f.up.railway.app', 'http://localhost:3000', 'http://localhost:3002'],
     credentials: true
 }));
 
@@ -102,10 +102,10 @@ io.on("connection", (socket) => {
 const { Pool } = require('pg');
 
 const pool = new Pool({
-    user: process.env.USER_POSTGRE,
-    host: process.env.HOST,
-    database: process.env.DATABASE,
-    password: process.env.PASSWORD,
+    user: "default",
+    host: "ep-red-salad-a4rv5l7b-pooler.us-east-1.aws.neon.tech",
+    database: "verceldb",
+    password: "LYv2Dsu0HUzP",
     port: 5432,
     ssl: {
         rejectUnauthorized: false,
